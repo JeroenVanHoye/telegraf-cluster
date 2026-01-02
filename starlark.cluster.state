@@ -1,0 +1,68 @@
+{
+  "nodes": {
+    "telegraf_1": {
+      "online": true,
+      "active": true,
+      "lastSeen": 1767370181952787200,
+      "lastChange": 1767370172027629600,
+      "votes": {
+        "Prio_Telegraf_1": "telegraf_1",
+        "Prio_Telegraf_2": "telegraf_2"
+      }
+    },
+    "telegraf_2": {
+      "online": true,
+      "active": true,
+      "lastSeen": 1767370181385713000,
+      "lastChange": 1767370174203603700,
+      "votes": {
+        "Prio_Telegraf_1": "telegraf_1",
+        "Prio_Telegraf_2": "telegraf_2"
+      }
+    },
+    "telegraf_3": {
+      "online": true,
+      "active": true,
+      "lastSeen": 1767370181761377500,
+      "lastChange": 1767370175419878700,
+      "votes": {
+        "Prio_Telegraf_1": "telegraf_1",
+        "Prio_Telegraf_2": "telegraf_2"
+      }
+    }
+  },
+  "hagroups": {
+    "Prio_Telegraf_1": {
+      "nodes": [
+        {
+          "name": "telegraf_1",
+          "prio": 10
+        },
+        {
+          "name": "telegraf_2",
+          "prio": 5
+        }
+      ],
+      "votes": 3,
+      "voteCount": 3,
+      "isGroupMaster": true
+    },
+    "Prio_Telegraf_2": {
+      "nodes": [
+        {
+          "name": "telegraf_2",
+          "prio": 10
+        },
+        {
+          "name": "telegraf_1",
+          "prio": 5
+        }
+      ],
+      "votes": 0,
+      "voteCount": 3,
+      "isGroupMaster": false
+    }
+  },
+  "quorumCount": 2,
+  "init": true
+}
