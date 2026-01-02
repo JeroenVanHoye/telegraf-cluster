@@ -76,7 +76,3 @@ The design is inspired by **Proxmox HA groups**.
 This configuration is functional and suitable for clustered Telegraf deployments, but still has room for improvement in dynamic plugin control.
 
 ---
-
-## License
-
-TBD
